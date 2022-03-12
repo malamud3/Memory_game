@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+body {
+    background-image: linear-gradient(#000000c7,#000000f7), url(images/bg.jpg);
+    font-family: 'Open Sans Hebrew', serif;
+}
+
+.main { 
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo { 
+    font-weight: bold;
+    font-size: 6rem;
+    text-shadow: 0px 5px 20px #fff700;
+    color: #ffd900;
+}
+
+.cards { 
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    gap:2vh;
+}
+
+.card { 
+        position: relative;
+		cursor: pointer;
+		width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 0.8s ease;
+}
+.card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility:  hidden;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    border: none;
+}
+
+.card__back > img {
+    width: 100px;
+    height: 100px;
+}
+
+.card__front { 
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    backface-visibility:  hidden;
+}
+.card__front > img {
+    width: 80px;
+    height: 80px;
+}
+
+.flipped{
+    transform: rotateY(180deg);
+}
+
+.matched {
+    pointer-events: none; 
+    transform: rotateY(180deg);
+}
+
+input {
+    border: 1px solid #e2e2e2;
+    padding: 1vh;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+button { 
+    border: unset;
+    padding: 1vh;
+    border-radius: 10px;
+    background: #0095ff;
+    font-weight: bold;
+    color: white;
+    padding: 1vh 2vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.points {
+    color: white;
+    font-weight: bold;
+}
+
+
+#board {
+    border: none;
+    padding: 1vh;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.stats {
+    display: none;
+}

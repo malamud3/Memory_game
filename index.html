@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="logo">
+                Emoji Memory Game
+            </div>
+            <div class="userData">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="name2" placeholder="Name">
+                <select name="board" id="board">
+                    <option value="4x4">4x4</option>
+                    <option value="6x6">6x6</option>
+                </select>
+                <button onclick="setUserData() ,play()">Set</button>
+            </div>
+            <div class="gameBoard">
+                <div class="stats">
+                    <div class="points">Current Player:<span class="currentPlayer"></span></div>
+                    <div class="points"><span class="pointsCounterPlayerA">0</span></div>
+                    <div class="points"><span class="pointsCounterPlayerB">0</span></div>
+                </div>
+                <div class="cards">
+                </div>
+            </div>
+    </div>
+    <div class="footer">
+        Built with ❤️ By Sam & Amir for HW2
+    </div>
+    </body>
+</html>
