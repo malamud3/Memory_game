@@ -2,14 +2,15 @@
 
 This is a simple memory game built using HTML, CSS, and JavaScript.
 
-[![Watch the video](https://img.youtube.com/vi/xs4fz_TnNSQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=xs4fz_TnNSQ)
+### Check out this YouTube video:
+[![YouTube Video](https://img.youtube.com/vi/xs4fz_TnNSQ/0.jpg)](https://www.youtube.com/watch?v=xs4fz_TnNSQ)
 
 ### Installation
 You can clone this repository to your local machine using the following command:
 
 ### bash
 Copy code
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/malamud3/Memory_game.git
 ### Usage
 To start the game, open index.html in your web browser. You will see a board with a grid of cards. The objective of the game is to find all matching pairs of cards.
 
